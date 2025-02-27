@@ -42,7 +42,10 @@ public class Order {
      }
 
      public Double total(){
-         //To Implement
-         return null;
+         double finalPrice = 0;
+         for(Item item: items){
+             finalPrice+= item.subTotal();
+         }
+         return finalPrice;
      }
 }

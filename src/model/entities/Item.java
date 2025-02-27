@@ -35,7 +35,6 @@ public class Item {
     }
 
     public Double subTotal(){
-        //To Implement
-        return null;
+        return quantity * price;
     }
 }

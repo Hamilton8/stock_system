@@ -35,4 +35,12 @@ public class Client {
    public Date getBirthDate(){
        return birthDate;
    }
+
+   public String toString(){
+       StringBuilder sb  = new StringBuilder();
+       sb.append("Name: " +name);
+       sb.append("\nEmail: "+email);
+       sb.append("\nBirthDate: "+birthDate);
+       return sb.toString();
+   }
 }
